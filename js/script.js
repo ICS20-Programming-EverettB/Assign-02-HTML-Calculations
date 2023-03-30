@@ -4,9 +4,8 @@
 
 "use strict";
 /**
- * This function calculates total income and tax.
+ * This function calculates the distance of a line.
  */
-const TAXRATE= 0.2005
 function calculate () {
   // input
   let ValueX1 = parseFloat(document.getElementById('number-x1').value);
@@ -22,7 +21,7 @@ function calculate () {
   let Distance = Math.sqrt(FinnalXY);
   
   // output
-  document.getElementById('Slope-of-Line').innerHTML = 'The distance of the line is ' + Distance.toFixed(3)
+  document.getElementById('Slope-of-Line').innerHTML = 'The distance of the line is ' + Distance.toFixed(2)
   
 
 }
