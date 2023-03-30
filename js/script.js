@@ -22,7 +22,7 @@ function calculate () {
   let Distance = Math.sqrt(FinnalXY);
   
   // output
-  document.getElementById('Slope-of-Line').innerHTML = 'The distance of the line is ' + Distance.toFixed(2)
+  document.getElementById('Slope-of-Line').innerHTML = 'The distance of the line is ' + Distance.toFixed(3)
   
 
 }

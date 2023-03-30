@@ -4,9 +4,12 @@ html {
   height: 100%;
   width: 100%;
 }
+body {
+  background-color: #eec3fe;
+}
 h2 {
-  color: #06b8f4;
+  color: #9300f5;
 }
 p {
-  color: blue;
+  color: #8c00ff;
 }
