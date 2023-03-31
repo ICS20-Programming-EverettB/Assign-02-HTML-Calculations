@@ -49,7 +49,7 @@
               id="number-x1"
               step=".001"
             />
-            <label class="mdl-textfield__label" for="length-of-rectangle">X1</label>
+            <label class="mdl-textfield__label" for="distance">X1</label>
             <span class="mdl-textfield__error">Number can not be more than 3 decimal places</span>
           </div>
         </form>
@@ -65,7 +65,7 @@
               id="number-x2"
               step=".001"
             />
-            <label class="mdl-textfield__label" for="width-of-rectangle">X2</label>
+            <label class="mdl-textfield__label" for="distance">X2</label>
             <span class="mdl-textfield__error">Number can not be more than 3 decimal places</span>
           </div>
         </form>
@@ -80,7 +80,7 @@
               id="number-y1"
               step=".001"
             />
-            <label class="mdl-textfield__label" for="length-of-rectangle">Y1</label>
+            <label class="mdl-textfield__label" for="distance">Y1</label>
             <span class="mdl-textfield__error">Number can not be more than 3 decimal places</span>
           </div>
         </form>
@@ -95,14 +95,14 @@
               id="number-y2"
               step=".001"
             />
-            <label class="mdl-textfield__label" for="width-of-rectangle">Y2</label>
+            <label class="mdl-textfield__label" for="Distancee">Y2</label>
             <span class="mdl-textfield__error">Number can not be more than 3 decimal places</span>
           </div>
         </form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()"
+          onclick="doMathClicked1()"
         >
           Calculate 
         </button>
@@ -110,6 +110,51 @@
         <p>
           <div id="">
             <div id="Slope-of-Line"></div>
+          </div>
+              <!-- Test score % calculator -->
+        <h2>
+          Test Score % Calculator 
+        </h2>
+        <img src="./images/testscore.jpeg" alt="testscore photo" width="475" height="225">
+        <!-- textfield input 1-->
+        <form action="#">
+          <p>Imput your score:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="test-score"
+              step="1.0"
+            />
+            <label class="mdl-textfield__label" for="test-score">Your score</label>
+            <span class="mdl-textfield__error">Number can not be a decimal place</span>
+          </div>
+        </form>
+        <!-- textfield imput 2 -->
+        <form action="#">
+          <p>Imput max score:</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              id="max-score"
+              step="1.0"
+            />
+            <label class="mdl-textfield__label" for="max-score">Max score</label>
+            <span class="mdl-textfield__error">Number can not be a decimal place</span>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculatePer()"
+        >
+          Calculate %
+        </button>
+        <br />
+        <p>
+          <div id="">
+            <div id="test"></div>
           </div>
         </p>
       </center>

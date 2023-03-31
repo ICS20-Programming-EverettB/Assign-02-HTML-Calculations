@@ -6,8 +6,8 @@
 /**
  * This function calculates the distance of a line.
  */
-function calculate () {
-  // input
+function doMathClicked1 () {
+    // input
   let ValueX1 = parseFloat(document.getElementById('number-x1').value);
   let ValueX2 = parseFloat(document.getElementById('number-x2').value);
   let ValueY1 = parseFloat(document.getElementById('number-y1').value);
@@ -19,9 +19,19 @@ function calculate () {
   let FinnalY = ValueY ** 2
   let FinnalXY = FinnalX + FinnalY
   let Distance = Math.sqrt(FinnalXY);
-  
-  // output
-  document.getElementById('Slope-of-Line').innerHTML = 'The distance of the line is ' + Distance.toFixed(2)
-  
 
+  // output
+  document.getElementById('Slope-of-Line').innerHTML = 'The distance of the line is ' + Distance.toFixed(2) + " Units"
+  
 }
+
+//This function calculates your test score 
+ function calculatePer () {
+    //input
+  let User = parseFloat(document.getElementById('test-score').value);
+  let Max = parseFloat(document.getElementById('max-score').value);
+  // process
+let ScorePercentage = User / Max * 100
+    document.getElementById('test').innerHTML = 'Your finnal mark is ' + ScorePercentage.toFixed(0) + "%"
+   
+ }
